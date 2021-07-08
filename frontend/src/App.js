@@ -30,7 +30,7 @@ render() {
           <div >
                 <div >
                       <h1>{detail.detail} </h1>
-                      <footer >--- by
+                      <footer >--- by -
                       <cite title="Source Title">
                       {detail.name}</cite>
                       </footer>

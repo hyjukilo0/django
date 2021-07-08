@@ -9,6 +9,7 @@ WORKDIR /app/main
 
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
+RUN pip3 install torch torchvision torchaudio
 COPY . .
 
 EXPOSE 8000
