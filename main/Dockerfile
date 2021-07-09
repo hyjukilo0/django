@@ -5,12 +5,13 @@ RUN apt-get update \
         postgresql-client \
     && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /app/main/
+RUN mkdir /main
+WORKDIR /main/
 
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 RUN pip3 install torch torchvision torchaudio
-COPY . /app/main/
+COPY . /main/
 
 EXPOSE 8000
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
