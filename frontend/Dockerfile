@@ -1,12 +1,11 @@
 FROM node:14.17.3
 
-RUN mkdir /app/frontend
-WORKDIR /app/frontend/
+WORKDIR /src/app
 
-ENV PATH /app/frontend/node_modules/ .bin:$PATH
+ENV PATH /src/app/node_modules/.bin:$PATH
 
-COPY package.json /app/frontend/
-COPY package_lock.json /app/frontend/
+COPY package.json /src/app
+COPY package_lock.json /src/app
 
 RUN npm install
 RUN npm install bootstrap jquery axios
