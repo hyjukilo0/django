@@ -1,10 +1,10 @@
 FROM node:14.17.3
 
-WORKDIR /app/frontend
+WORKDIR /app/frontend/
 
-ENV PATH /app/frontend/node_modules/.bin:$PATH
+ENV PATH /app/frontend/node_modules/ .bin:$PATH
 
-COPY package.json /app/frontend
+COPY package.json /app/frontend/
 COPY package_lock.json /app/frontend/
 
 RUN npm install
