@@ -9,7 +9,6 @@ WORKDIR /src/app
 
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
-RUN pip3 install torch torchvision torchaudio
 
 COPY . /src/app
 
