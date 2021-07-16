@@ -1,0 +1,13 @@
+
+{"intents":[
+    {
+        "tag": "tên",
+        "patterns": ["Bạn tên là gì?","Bạn là ai thế","Cho hỏi ai đấy ạ?"],
+        "responses": ["Tôi là chatbot của chủ shop"]
+    },
+    {
+        "tag": "địa chỉ",
+        "patterns": ["bạn ở đâu thế?","địa chỉ ở đâu"],
+        "responses": ["833/38c Kha Vạn Cân nhé"]
+    }
+]}
