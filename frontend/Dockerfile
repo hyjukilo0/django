@@ -10,7 +10,7 @@ COPY package_lock.json /src/app
 RUN npm install
 RUN npm install bootstrap jquery axios
 
-COPY . .
+COPY . /src/app
 
 EXPOSE 3000
 CMD ["npm", "start"]
