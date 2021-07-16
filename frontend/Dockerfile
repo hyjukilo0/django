@@ -5,7 +5,7 @@ WORKDIR /src/app
 ENV PATH /src/app/node_modules/.bin:$PATH
 
 COPY package.json /src/app
-COPY package_lock.json /src/app
+COPY package-lock.json /src/app
 
 RUN npm install
 RUN npm install bootstrap jquery axios
